@@ -17,9 +17,8 @@ remote_state {
   }
 
   config = {
-    bucket         = "acoustic-prod-ccloud-terraform"
-    key            = "ccloud/${path_relative_to_include()}.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-state-lock"
+    bucket         = "inhabit-state-test"
+    key            = "inhabit/${path_relative_to_include()}.tfstate"
+    region         = "eu-central-1"
   }
 }
